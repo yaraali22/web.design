@@ -1,0 +1,224 @@
+
+*{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppin', sans-serif;
+    
+    
+    }
+
+    header nav {
+
+        position: fixed;
+        left :0;
+        top: 0;
+        width: 90%;
+        background: white;
+        z-index: 1;
+        
+        
+        
+        }
+        
+        nav .navbar {
+        
+        width: 90%;
+        background: white;
+        object-fit: contain;
+     
+        
+        
+        }
+        
+        .navbar .logo {
+        height: 50%;
+        width: 50%; 
+       
+        
+        }
+        .navbar .logo img {
+            height: 30%;
+            width: 50%;
+     margin-top: 10px;
+    position :relative;
+    z-index: 10;
+    background-attachment: fixed;
+        }
+        .navbar  .menu {
+            display: flex;
+            margin-left: 500px;
+          margin-top:-10px ;
+
+            }
+            .navbar .menu  li {
+                list-style: none;
+                margin-top: -70px;
+                margin-left: 150px;
+                position: relative;
+
+               
+            }
+       
+               .menu li a  {
+                text-decoration: none;
+                font-size: 17px;
+                color: black;
+                font-weight: 100px;
+                position: absolute;
+                transition: 0.5s; }
+             .menu li a:hover {
+                color: red;
+             }
+    
+             .navbar .search-box 
+            {
+                position:absolute;
+                height: 50px;
+                width: 1000px;
+                left: 1100px;
+                top: 50px;
+            }
+            
+             .search-box input[type ="text"] 
+             {
+            
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            height: 50%;
+            width: 15%;
+            color: black;
+            font-size: 15px;
+            outline: none;
+            border: 2px solid #2c3e50;
+            border-radius: 4px;
+            padding: 0 10px 0 10px ;
+             }
+            .search-box a {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 20px;
+                color: #2c3e50;
+                padding: 0 5px 0 0s;
+                border-right: 2px solid;
+            }
+            .about {
+              position: relative; 
+             
+              left: 3%;
+              width: 37%; 
+              padding: 20px; 
+              margin-bottom: 1px;
+              background-color: peachpuff;
+              border: palevioletred 5px;
+              font-style: italic;
+              border-style: ridge;
+              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+              margin-top: 150px;
+          }
+          
+          .about .text {
+              font-size: 27px;
+              color: black;
+              margin: 0 5px 10px ;
+              background-color: white;
+
+          }
+          
+          .about .typing-text {
+             
+              padding: 20px; 
+              overflow: scroll;
+              background-color: peachpuff; 
+              
+          }
+header .image img 
+{
+    height: 70%;
+    left: 800px ;
+    top: 150px;
+    position: fixed;
+
+}
+
+
+.container{
+    width: 50%;
+    margin-top: 1px ;
+    margin-left: 50px;
+  }
+  @keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #f3b0ff;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.front::before{
+    background-color: #ffcc33;
+  }
+  .bar.back::before{
+    background-color: #a6cfe3;
+  }
+  
+  .bar.learning::before{
+    width: calc(55% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(60% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(50% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+  
+  
+.logo{
+  position: inherit;
+}
